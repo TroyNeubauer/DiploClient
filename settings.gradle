@@ -1,0 +1,10 @@
+include 'desktop', 'android', 'ios', 'html', 'base'
+
+include ':Troy Berry Core'
+project(':Troy Berry Core').projectDir = new File('D:/Java/Current Projects/Troy Berry Core')
+
+include ':School'
+project(':School').projectDir = new File('D:/Java/Current Projects/School')
+
+include ':Diplo Core'
+project(':Diplo Core').projectDir = new File('D:/Java/Current Projects/Diplo/Diplo Core')
