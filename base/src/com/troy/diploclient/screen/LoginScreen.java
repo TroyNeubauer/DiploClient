@@ -59,7 +59,6 @@ public class LoginScreen implements Screen {
 				DiploClientNet net = game.getNet();
 				if (net.isConnected()) {
 					net.getContext().writeAndFlush(new LoginData(usernameField.getText().toCharArray(), passwordField.getText().toCharArray()));
-					System.out.println("sent login to server " + usernameField.getText() + ", " + passwordField.getText());
 				} else {
 					GDXButtonDialog warningDialog = game.getDialogs().newDialog(GDXButtonDialog.class);
 					warningDialog.setTitle("No connection!").setMessage("Check your internet connection or try again later!");
