@@ -17,6 +17,7 @@ public class DiploClient extends Game {
 	private Settings settings;
 	private NotificationHandler handler;
 	private DiploClientNet net;
+	
 
 	public DiploClient(String[] args, NotificationHandler handler) {
 		this.handler = handler;
